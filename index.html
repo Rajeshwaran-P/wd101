@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Application Registration form for Students</title>
+  <link rel="stylesheet" href="style.css" />
+  <img src="image.jpg" alt="image" style="width: 180px; float: left; padding-top: 18%;">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <div class="center">
+    <h1 style="padding-left:50px ;">APPLICATION FORM FOR REGISTRATION - STUDENTS</h1>
+
+
+  <div class="center">
+    <form id="application-form-for-registration-students" style="border: 5%">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Name of your applicant" id="name" required />
+        <span aria-hidden="true" class="required" style="color: red;">*</span>
+      </div>
+      <br />
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Email-id enter" id="email" required />
+        <span aria-hidden="true" class="required" style="color: red;">*</span>
+      </div>
+      <br />
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter your private key" id="password" required />
+        <span aria-hidden="true" class="required" style="color: red;">*</span>
+      </div>
+      <br />
+      <div>
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" required />
+        <span aria-hidden="true" class="required" style="color: red;">*</span>
+      </div>
+      <br />
+      <div>
+        <label>
+          <input type="checkbox" id="accepted-terms" required />
+          You are requested to accept the above terms and conditions.
+        </label>
+      </div>
+      <br />
+      <button type="submit" style="font-style: italic; font-size: 20px;">Submit</button>
+    </form>
+  </div>
+
+  </br>
+  </br>
+  </br>
+  </br>
+
+  <div class="center">
+    <h2>Registration details</h2>
+
+    <table id="entries-body-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Dob</th>
+          <th>Accepted terms?</th>
+        </tr>
+      </thead>
+      <tbody id="entries-rajeshbody-table-center"></tbody>
+    </table>
+    <script src="index.js"></script>
+  </div>
+
+</body>
+
+</html>
